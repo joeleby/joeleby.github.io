@@ -1,0 +1,22 @@
+.clearfix:after{
+  clear:both;
+  content: ' ';
+  display: block;
+  height: 0;
+  font-size:0;
+  line-height: 0;
+  overflow: hidden;
+}
+.pull-right{float:right;}
+.u-txtcenter{text-align: center;}
+.u-inlineblock{
+  display: inline-block;
+  margin-right: -4px;
+}
+img.desaturate {
+	filter: gray;
+	filter: grayscale(100%);
+}
+img.desaturate:hover {
+	filter: none;
+}
