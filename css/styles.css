@@ -115,13 +115,14 @@ body>section:nth-of-type(6n+6) .preview, body>section:nth-of-type(6n+6) .modal-h
   max-width:80%;
 }
 .section-hdr{
-  line-height: 200px;
+  line-height: 1;
+  margin: 70px 0;
   text-align: center;
   font-weight: 800;
   letter-spacing: -2px;
   color:black;
 }
-.row {margin: 8px;}
+
 .grid{
   width:100%;
   float:left;
@@ -129,22 +130,23 @@ body>section:nth-of-type(6n+6) .preview, body>section:nth-of-type(6n+6) .modal-h
   min-height: 1px;
   padding: 8px;
 }
+.row {margin: 8px 10%;}
+
+@media (min-width: 420px) {
+  .grid{width:50%;height: 40vw}
+}
+
+@media (min-width: 630px) {
+  .grid{width:33.3333%;height: 25vw}
+}
+
+@media (min-width: 960px) {
+  .grid{width:25%;height: 20vw}
+}
 .grid .preview{
-  padding: 70px 30px;
   background-color: #6b6b6b;
+  height: 100%;
 }
 .grid .svg{
   width:100%;
 }
-@media (min-width: 280px) {
-  .grid{width:50%;}
-}
-
-@media (min-width: 480px) {
-  .grid{width:33.3333%;}
-}
-
-@media (min-width: 786px) {
-  .grid{width:25%;}
-}
-

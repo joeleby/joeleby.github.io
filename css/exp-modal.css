@@ -41,8 +41,7 @@
   position: relative;
   height: 388px;
 }
-.Exp.full .Exp-header {
-}
+.Exp.full .Exp-header {}
 .Exp-close{
   cursor: pointer;
   font-size: 60px;
@@ -53,7 +52,7 @@
   top:20px;
   right: 20px;
   transform: rotate(0deg);
-  transition: transform 1.5s;
+  transition: transform 0.5s;
   transform-origin: 16px 21px;
 }
 .Exp:not(.full) .Exp-close{display: none;}
@@ -83,7 +82,6 @@
 }
 .Exp:not(.full) .Exp-hero{
   transform: translateY(-200px);
-  width:60%;
 }
 .Exp:not(.full):hover .Exp-hero{
   transform: translateY(-230px);
