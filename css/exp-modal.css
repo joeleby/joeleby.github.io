@@ -28,6 +28,8 @@
   height: 388px;
   overflow: hidden;
   overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
 }
 
 .Exp.full .Exp-dialog {
