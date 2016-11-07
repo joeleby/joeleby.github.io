@@ -1,0 +1,7 @@
+<svg viewbox="0 0 2003 1381" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ipadframe</title>
+    <path d="M1899.7,1384H100.3C45.1,1384,0,1338.9,0,1283.7V106.3C0,51.2,45.1,6,100.3,6H1899.7C1954.9,6,2000,51.1,2000,106.3V1283.7C2000,1338.9,1954.9,1384,1899.7,1384Z" opacity="0.08" stroke="#f2f2f2" stroke-miterlimit="10" stroke-width="3" style="isolation:isolate" transform="translate(1.5 -4.5)"/>
+    <circle cx="93.9" cy="690.5" fill="#f6f6f6" r="51.4"/>
+    <circle cx="1913.5" cy="690.5" fill="#6c6c6c" r="9"/>
+    <image height="1228" transform="translate(181.319 74)" width="1638" xlink:href="../img/camppokemon_01.jpg"/>
+</svg>
