@@ -28,6 +28,8 @@
   height: 388px;
   overflow: hidden;
   overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
 }
 
 .Exp.full .Exp-dialog {
@@ -62,10 +64,10 @@
   text-align: center;
 }
 .Exp-title h2{
-  line-height: 200px;
+  line-height: 175px;
 }
 .Exp-title img, .Exp-title svg{
-  height: 200px;
+  height: 175px;
 }
 
 .Exp-body {
