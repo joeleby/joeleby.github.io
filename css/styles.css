@@ -1,76 +1,34 @@
 
 header{
-  padding: 75px 0 45px;
+  padding: 45px 0;
   text-align: center;
 }
-.thumbcircle{
-  border-radius:50%;
-  border: 5px solid #e4e4e4;
-  background-color:#e4e4e4;
-  height:64px;
-  width: 64px;
-  display: inline-block;
+  #hero{
+    max-width:300px;
+
+  }
+  #hero text{
+    isolation: isolate;
+    font-size: 135px;
+    font-weight: 700;
+    letter-spacing: -8px;
+  }
+header p{
+  margin:10px auto 15px;
 }
-.thumbcircle img{
-  border-radius:50%;
-  width:100%;
-  height: 100%;
-}
-.vertline, .vertline2{
-  margin: -3px 0 -7px;
-  font-size: 0;
-  line-height: 0;
-}
-.vertline2{
-  margin-top: 20px;
-}
-.vertline:after,.vertline2:after{
-  content: ' ';
-  display: inline-block;
-  width: 1px;
-  height:60px;
-  background-color:#e4e4e4;
-  margin-right: -4px;
-}
-.vertline2:after{
-  height:45px;
+.profile-title{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 19px;
+  max-width:480px;
 }
 
-header h1{
-  text-transform: uppercase;
-  color: #d9d9d9;
-  margin:10px 0 0;
-  font-weight: 800;
-  letter-spacing: -3px;
-  font-size: 60px;
-  line-height: 1
-}
-header p{
-  margin:0;
-}
-.profile-title{
-  text-transform: uppercase;
-  color:#8d8d8d;
-  font-weight: bold
-}
-.profile-title{
-  font-size: 19px;
-  margin-top:2px;
-  letter-spacing: 2px
-}
-.profile-links{
-  margin-top:4px;
-}
 .profile-links a{
-  font-weight: bold;
   padding: 0 6px;
   font-size: 12px;
   color: #8d8d8d;
+  text-transform: uppercase;
 }
 @media (min-width: 420px) {
-  .profile-title{
-    letter-spacing: 5px
-  }
   .profile-links a{
     padding: 0 15px;
   }
@@ -81,7 +39,11 @@ header p{
 .profile-links a:last-child{
   padding-right: 0;
 }
-
+.caret-down{
+  font-size: 30px;
+  line-height: 1;
+  color:#ddd;
+}
 
 section{}
 

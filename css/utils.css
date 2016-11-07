@@ -13,10 +13,3 @@
   display: inline-block;
   margin-right: -4px;
 }
-img.desaturate {
-	filter: gray;
-	filter: grayscale(100%);
-}
-img.desaturate:hover {
-	filter: none;
-}
