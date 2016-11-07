@@ -1,8 +1,8 @@
 {
   "name": "Portfolio",
-  "tagline": "Portifino",
+  "author": "Joel Eby",
+  "tagline": "Portfolio site of Joel Eby",
   "version": "1.0.0",
-  "description": "Portfolio site",
-  "author": "thewanted",
+  "description": "Portfolio site of Joel Eby",
   "license": "ISC"
 }
