@@ -83,6 +83,7 @@ body>section:nth-of-type(6n+6) .preview, body>section:nth-of-type(6n+6) .modal-h
   font-weight: 800;
   letter-spacing: -2px;
   color:black;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 .grid{
@@ -90,7 +91,6 @@ body>section:nth-of-type(6n+6) .preview, body>section:nth-of-type(6n+6) .modal-h
   float:left;
   position: relative;
   min-height: 1px;
-  padding: 8px;
 }
 .row {margin: 8px 10%;}
 
@@ -108,7 +108,14 @@ body>section:nth-of-type(6n+6) .preview, body>section:nth-of-type(6n+6) .modal-h
 .grid .preview{
   background-color: #6b6b6b;
   height: 100%;
+  background-size: cover;
 }
-.grid .svg{
+.grid:nth-child(6n+1) .preview{background-image: url(//tympanus.net/Development/HoverEffectIdeas/img/1.jpg)}
+.grid:nth-child(6n+2) .preview{background-image: url(//tympanus.net/Development/HoverEffectIdeas/img/2.jpg)}
+.grid:nth-child(6n+3) .preview{background-image: url(//tympanus.net/Development/HoverEffectIdeas/img/3.jpg)}
+.grid:nth-child(6n+4) .preview{background-image: url(//tympanus.net/Development/HoverEffectIdeas/img/4.jpg)}
+.grid:nth-child(6n+5) .preview{background-image: url(//tympanus.net/Development/HoverEffectIdeas/img/5.jpg)}
+
+.grid .preview > svg{
   width:100%;
 }
