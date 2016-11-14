@@ -26,7 +26,7 @@
 }
 .modal-content {
   position: relative;
-  background-color: #fff;
+  background-color: #f9f6ea;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   outline: 0;
@@ -36,10 +36,9 @@
   padding: 15px;
   color:#fff;
   position: relative;
+  text-align: center;
 }
-.modal-header svg{
-  width:100%;
-}
+
 .modal-header h4{
   font-size: 40px;
   margin: 0;
@@ -56,14 +55,14 @@
   margin-top: 0;
   transform: rotate(0deg);
   transition: transform 0.25s;
-  transform-origin: 16px 21px;
-  line-height: 34px;
-  font-size: 60px;
-  width: 34px;
+  transform-origin: 40px 40px;
+  width:80px;
+  height: 80px;
 }
 .close:hover{
-   transform: rotate(360deg);
+  transform: rotate(90deg);
 }
+
 .modal-body {
   position: relative;
   padding: 15px;
@@ -108,7 +107,7 @@
 
 }
 .Exp-dialog {
-  background-color: #fff;
+  background-color: #f9f6ea;
   top:0;
   right:0;
   left:0;
@@ -129,55 +128,59 @@
   color:#fff;
   position: relative;
   height: 388px;
-    transition: height 0.5s;
+  transition: height 0.5s;
 
 }
-.Exp.full .Exp-header {height: 188px}
+.Exp.full .Exp-header {height: 500px}
 .Exp-close{
   position: absolute;
   top:20px;
   right:20px;
   cursor: pointer;
-  font-size: 60px;
-  line-height: 34px;
   margin-top: 0;
-  width: 34px;
-  position: absolute;
-  top:20px;
-  right: 20px;
   transform: rotate(0deg);
   transition: transform 0.25s;
-  transform-origin: 16px 21px;
+  transform-origin: 40px 40px;
+  width:80px;
+  height: 80px;  
 }
 .Exp:not(.full) .Exp-close{display: none;}
-.Exp-close:hover{transform: rotate(360deg);}
-
+.Exp-close:hover{transform: rotate(90deg);}
+.downarrow{
+  width:80px;
+  height:80px;
+}
 .Exp-title{
   text-align: center;
 }
-.Exp-title h2{
-  line-height: 175px;
+.Exp-title p{
+  font-family:'Cormorant Garamond', serif;
+  font-size:55px;
+  max-width: 850px;
+  margin-right: auto;
+  margin-left: auto;
 }
-.Exp-title img{
-  height: 175px;
-}
-.Exp-title svg{
-  max-width: 100%
-}
+.Exp:not(.full) .Exp-title p, .Exp:not(.full) .downarrow{display: none;}
 
 .Exp-body {
   padding: 15px;
   text-align: center;
 }
+.Exp-h3{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  color: black;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right:auto;
+  margin-left:auto;
+}
+.Exp:not(.full) .Exp-h3{display: none;}
 
 .Exp-hero{
-  max-width: 800px;
   -webkit-transition: -webkit-transform 0.3s;
   -o-transition: -o-transform 0.3s;
   transition: transform 0.3s;
-}
-img.Exp-hero{
-  width:100%;
 }
 .Exp:not(.full) .Exp-hero{
   transform: translateY(-200px);
@@ -185,10 +188,13 @@ img.Exp-hero{
 .Exp:not(.full):hover .Exp-hero{
   transform: translateY(-230px);
 }
-
-.article-column{
-  max-width:550px;
-  margin-right:auto;
-  margin-left:auto;
-  text-align: left
+.Exp-body >p, .Exp-body >h4{
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.Exp-body >svg, .Exp-body >img{
+  width:1230px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
