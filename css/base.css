@@ -6,8 +6,6 @@ html {
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {display: block}
 a {background-color: transparent}
 a:active, a:hover {outline: 0}
-img {border: 0;max-width:100%;}
-svg:not(:root) {overflow: hidden;}
 
 *, :after, :before {
   -webkit-box-sizing: border-box;
@@ -22,8 +20,8 @@ html {
 body{
   background-color: #f9f6ea;
   color:#444;
-  font-size: 16px; 
-  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.42857143;
   font-weight: 300;
   position: relative;
@@ -42,13 +40,16 @@ a:focus {
   outline-offset: -2px
 }
 
+img {vertical-align: middle;border: 0;max-width:100%;}
+svg{overflow: hidden;max-width: 100%}
+
 h2,h3,h4,h5,h6{font-family: inherit;font-weight: 400;line-height: 1.1;color: inherit;}
 h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{font-weight: 400;line-height: 1;font-size: 75%}
 h2 {font-size: 50px;margin: 0}
 h3 {font-size: 30px}
-h4 {font-size: 24px}
-h5 {font-size: 18px}
-h6 {font-size: 16px}
+h4 {font-size: 28px}
+h5 {font-size: 25px}
+h6 {font-size: 22px}
 p {margin: 0 0 10px}
 
 footer{
@@ -66,10 +67,104 @@ footer{
   overflow: hidden;
 }
 .pull-right{float:right;}
-.u-txtcenter{text-align: center;}
+.u-txtcenter{text-align: center!important;}
+.u-blockcenter{
+  margin-right:auto;
+  margin-left:auto;
+}
 .u-inlineblock{
   display: inline-block;
   margin-right: -4px;
 }
+.u-maxw550{max-width: 550px}
+.u-maxw650{max-width: 650px}
+.u-maxw750{max-width: 750px}
+.u-maxw850{max-width: 850px}
+.u-maxw950{max-width: 950px}
+.u-maxw1050{max-width:1050px}
+.u-maxw1150{max-width:1150px}
+.u-maxw1250{max-width:1250px}
 
+/* Common hover effect style */
+.grid figure {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  margin: 0;
+  height: 100%;
+}
 
+.grid figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+}
+
+.grid figure figcaption {
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.grid figure figcaption::before, .grid figure figcaption::after {
+  pointer-events: none;
+}
+
+.grid figure figcaption{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.grid figure p {
+  margin: 0;
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+/*---------------*/
+/***** Milo *****/
+/*---------------*/
+
+figure.effect {background: black;}
+
+figure.effect img {
+  max-width: none;
+  width: -webkit-calc(100% + 60px);
+  width: calc(100% + 60px);
+  opacity: 1;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-30px,0,0) scale(1.12);
+  transform: translate3d(-30px,0,0) scale(1.12);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+figure.effect:hover img {
+  opacity: 0.5;
+  -webkit-transform: translate3d(0,0,0) scale(1);
+  transform: translate3d(0,0,0) scale(1);
+}
+
+figure.effect p {
+  padding: 0 10px 0 0;
+  width: 50%;
+  border-right: 1px solid #fff;
+  text-align: right;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-40px,0,0);
+  transform: translate3d(-40px,0,0);
+}
+
+figure.effect:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}

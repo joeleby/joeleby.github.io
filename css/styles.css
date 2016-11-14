@@ -3,23 +3,24 @@ header{
   padding: 45px 0;
   text-align: center;
 }
-  #hero{
-    max-width:300px;
+#hero{
+  max-width:300px;
 
-  }
-  #hero text{
-    isolation: isolate;
-    font-size: 135px;
-    font-weight: 700;
-    letter-spacing: -8px;
-  }
+}
+#hero text{
+  isolation: isolate;
+  font-size: 135px;
+  font-weight: 700;
+  letter-spacing: -8px;
+}
 header p{
   margin:10px auto 15px;
 }
 .profile-title{
   font-family: 'Cormorant Garamond', serif;
   font-size: 19px;
-  max-width:480px;
+  max-width: 510px;
+  padding: 0 15px;
 }
 
 .profile-links a{
