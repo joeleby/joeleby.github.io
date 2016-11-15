@@ -39,14 +39,6 @@
   text-align: center;
 }
 
-.modal-header h4{
-  font-size: 40px;
-  margin: 0;
-  line-height: 1;
-}
-.modal-header h4 img{
-  height: 99px
-}
 .close{
   position: absolute;
   top:20px;
@@ -96,15 +88,15 @@
 .Exp:nth-of-type(5) .Exp-header{background-color:#989898}
 .Exp:nth-of-type(6) .Exp-header{background-color:#c1c1c1}
 
-.Exp-modal {}
-.Exp.full .Exp-modal {
-  position: fixed;
+.Exp-modal {
   top:0;
   right:0;
   bottom:0;
   left:0;
+}
+.Exp.full .Exp-modal {
+  position: fixed;
   z-index: 1050;
-
 }
 .Exp-dialog {
   background-color: #f9f6ea;
@@ -127,11 +119,12 @@
   padding: 15px 15px 0;
   color:#fff;
   position: relative;
-  height: 388px;
-  transition: height 0.5s;
-
+  min-height: 388px;
+  max-height: 388px;
 }
-.Exp.full .Exp-header {height: 500px}
+.Exp.full .Exp-header {
+  max-height: 999px;
+}
 .Exp-close{
   position: absolute;
   top:20px;
@@ -146,10 +139,7 @@
 }
 .Exp:not(.full) .Exp-close{display: none;}
 .Exp-close:hover{transform: rotate(90deg);}
-.downarrow{
-  width:80px;
-  height:80px;
-}
+
 .Exp-title{
   text-align: center;
 }
@@ -178,8 +168,6 @@
 .Exp:not(.full) .Exp-h3{display: none;}
 
 .Exp-hero{
-  -webkit-transition: -webkit-transform 0.3s;
-  -o-transition: -o-transform 0.3s;
   transition: transform 0.3s;
 }
 .Exp:not(.full) .Exp-hero{
@@ -197,4 +185,13 @@
   width:1230px;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+.downarrow{
+  width:80px;
+  height:80px;
+}
+.leftarrow{
+  width:80px;
+  height:80px;
+  vertical-align: middle;
 }
