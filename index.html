@@ -14,13 +14,13 @@
 </head>
 <body>
 <header>
-	<svg id="hero" viewBox="0 0 386 287" preserveAspectRatio="xMidYMid meet">
+	<svg class="hero" viewBox="0 0 386 287" preserveAspectRatio="xMidYMid meet">
 		<defs>
 			<mask id="mask" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%">
 				<use xlink:href="./svg/sprites.svg#joeleby" fill="#ffffff"></use>
 			</mask>
 		</defs>
-		<image xlink:href="http://joeleby.com/img/joel.png" width="435" height="652.5" mask="url(#mask)" y="-58" x="0"/>
+		<image xlink:href="//joeleby.com/img/joel.png" width="435" height="652.5" mask="url(#mask)" y="-58" x="0"/>
 	</svg>
 
 	<p class="profile-title">I am a seasoned creative director and designer. With 20 years experience building digital creative teams, leading ideation and execution for experiences, campaigns and innovative work, I lorem ipsum dolor sit amet with ease.</div>
@@ -31,22 +31,28 @@
 		<a href="//www.crrnt.co" target="_blank">ECD at CRRNT</a>
 	</p>
 	<svg class="downarrow" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#downarrowgray"></use></svg>
-
 </header>
+<div class="fixed-fix"></div>
 <!-- about me modal -->
 <div class="modal _aboutme">
 	<div class="modal-dialog">
 		<div class="modal-content">
-			<div class="clearfix modal-header">
+			<div class="modal-header">
 				<svg class="close" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg>
-				<h2>about me</h2>
+				<svg class="hero" viewBox="0 0 386 287" preserveAspectRatio="xMidYMid meet">
+					<defs>
+						<mask id="mask" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%">
+							<use xlink:href="./svg/sprites.svg#joeleby" fill="#ffffff"></use>
+						</mask>
+					</defs>
+					<image xlink:href="//joeleby.com/img/joel.png" width="435" height="652.5" mask="url(#mask)" y="-58" x="0"/>
+				</svg>
 			</div>
-			<div class="modal-body">
-				<article class="project-article">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia debitis, neque. Nostrum, aliquam culpa minus quas itaque officia assumenda molestiae, sunt reprehenderit architecto rem. Ab temporibus perspiciatis amet, id cumque!</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam cum ipsa dolorem. Accusantium ad maxime, consequatur ratione provident suscipit. Placeat soluta doloribus earum sint amet at magni quod error aliquam!</p>
-				</article>
-			</div>
+			<article class="modal-body">
+				<p class="u-blockcenter u-maxw750">This is a label for the screenshot above. Sometimes I’ll say a lot, sometimes I’ll say just a little. If there is wrapping then do it like this. Careful not to get too wide with the column of text. I like the images wider than the text column.</p>
+				<p class="u-blockcenter u-maxw550">I’m thinking that I’ll just prep some images as combinations of two images so that the code is simple. Keep the layout simple one column all the way down. All the images should be max width to match the width down the page, but the height can be variable.... I think.</p>
+				<p class="u-blockcenter u-maxw750">This is a label for the screenshot above. Sometimes I’ll say a lot, sometimes I’ll say just a little. If there is wrapping then do it like this. Careful not to get too wide with the column of text. I like the images wider than the text column.</p>
+			</article>
 		</div>
 	</div>
 </div>
@@ -67,7 +73,7 @@
 					<h3 class="Exp-h3 u-maxw850">Words describing the challenge of this project. Lorem ipsum solor sit amet comprende Seth Broweleit.</h3>
 					<svg class="Exp-hero" viewbox="0 0 2003 1381" preserveAspectRatio="xMidYMid meet">
 						<use xlink:href="./svg/sprites.svg#ipad"></use>
-					    <image xlink:href="../img/camppokemon_01.jpg" width="1638" height="1228" transform="translate(181 74)"/>
+					    <image xlink:href="./img/camppokemon_01.jpg" width="1638" height="1228" transform="translate(181 74)"/>
 					</svg>
 					<p class="u-blockcenter u-maxw750">This is a label for the screenshot above. Sometimes I’ll say a lot, sometimes I’ll say just a little. If there is wrapping then do it like this. Careful not to get too wide with the column of text. I like the images wider than the text column.</p>
 					<img src="./img/two_up.png" alt="" class="u-blockcenter" />
@@ -87,161 +93,175 @@
 <section class="Exp">
 	<div class="Exp-modal">
 		<div class="Exp-dialog">
-			<div class="Exp-header">
-				<svg class="Exp-close _jsX" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg>
-				<div class="Exp-title">
-				  <svg preserveAspectRatio="xMidYMid meet">
-				    <use xlink:href="./svg/sprites.svg#ea"></use>
-				  </svg>
+			<div class="Exp-content">
+				<div class="Exp-header">
+					<svg class="Exp-close _jsX" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg>
+					<div class="Exp-title">
+					  <svg preserveAspectRatio="xMidYMid meet">
+					    <use xlink:href="./svg/sprites.svg#ea"></use>
+					  </svg>
+					</div>
 				</div>
+				<article class="Exp-body">
+					<svg class="Exp-hero" viewbox="0 0 2003 1381" preserveAspectRatio="xMidYMid meet">
+						<use xlink:href="./svg/sprites.svg#ipad"></use>
+					    <image xlink:href="./img/camppokemon_01.jpg" width="1638" height="1228" transform="translate(181 74)"/>
+					</svg>
+					<h3 class="u-blockcenter u-maxw750">article header</h3>
+					<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
+					<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
+				</article>
 			</div>
-			<article class="Exp-body">
-				<svg class="Exp-hero" viewbox="0 0 2003 1381" preserveAspectRatio="xMidYMid meet">
-					<use xlink:href="./svg/sprites.svg#ipad"></use>
-				    <image xlink:href="../img/camppokemon_01.jpg" width="1638" height="1228" transform="translate(181 74)"/>
-				</svg>
-				<h3 class="u-blockcenter u-maxw750">article header</h3>
-				<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
-				<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
-			</article>
 		</div>
 	</div>
 </section>
 <section class="Exp">
 	<div class="Exp-modal">
 		<div class="Exp-dialog">
-			<div class="Exp-header">
-				<svg class="Exp-close _jsX" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg>
-				<div class="Exp-title">
-				  <svg preserveAspectRatio="xMidYMid meet">
-				    <use xlink:href="./svg/sprites.svg#espn"></use>
-				  </svg>
+			<div class="Exp-content">
+				<div class="Exp-header">
+					<svg class="Exp-close _jsX" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg>
+					<div class="Exp-title">
+					  <svg preserveAspectRatio="xMidYMid meet">
+					    <use xlink:href="./svg/sprites.svg#espn"></use>
+					  </svg>
+					</div>
 				</div>
+				<article class="Exp-body">
+					<svg class="Exp-hero" viewbox="0 0 2003 1381" preserveAspectRatio="xMidYMid meet">
+						<use xlink:href="./svg/sprites.svg#ipad"></use>
+					    <image xlink:href="./img/camppokemon_01.jpg" width="1638" height="1228" transform="translate(181 74)"/>
+					</svg>
+					<h3 class="u-blockcenter u-maxw750">article header</h3>
+					<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
+					<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
+				</article>
 			</div>
-			<article class="Exp-body">
-				<svg class="Exp-hero" viewbox="0 0 2003 1381" preserveAspectRatio="xMidYMid meet">
-					<use xlink:href="./svg/sprites.svg#ipad"></use>
-				    <image xlink:href="../img/camppokemon_01.jpg" width="1638" height="1228" transform="translate(181 74)"/>
-				</svg>
-				<h3 class="u-blockcenter u-maxw750">article header</h3>
-				<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
-				<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
-			</article>
 		</div>
 	</div>
 </section>
 <section class="Exp">
 	<div class="Exp-modal">
 		<div class="Exp-dialog">
-			<div class="Exp-header">
-				<svg class="Exp-close _jsX" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg>
-				<div class="Exp-title">
-				  <svg preserveAspectRatio="xMidYMid meet">
-				    <use xlink:href="./svg/sprites.svg#games"></use>
-				  </svg>
+			<div class="Exp-content">
+				<div class="Exp-header">
+					<svg class="Exp-close _jsX" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg>
+					<div class="Exp-title">
+					  <svg preserveAspectRatio="xMidYMid meet">
+					    <use xlink:href="./svg/sprites.svg#games"></use>
+					  </svg>
+					</div>
 				</div>
+				<article class="Exp-body">
+					<svg class="Exp-hero" viewbox="0 0 2003 1381" preserveAspectRatio="xMidYMid meet">
+						<use xlink:href="./svg/sprites.svg#ipad"></use>
+					    <image xlink:href="./img/camppokemon_01.jpg" width="1638" height="1228" transform="translate(181 74)"/>
+					</svg>
+					<h3 class="u-blockcenter u-maxw750">article header</h3>
+					<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
+					<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
+				</article>
 			</div>
-			<article class="Exp-body">
-				<svg class="Exp-hero" viewbox="0 0 2003 1381" preserveAspectRatio="xMidYMid meet">
-					<use xlink:href="./svg/sprites.svg#ipad"></use>
-				    <image xlink:href="../img/camppokemon_01.jpg" width="1638" height="1228" transform="translate(181 74)"/>
-				</svg>
-				<h3 class="u-blockcenter u-maxw750">article header</h3>
-				<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
-				<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
-			</article>
 		</div>
 	</div>
 </section>
 <section class="Exp">
 	<div class="Exp-modal">
 		<div class="Exp-dialog">
-			<div class="Exp-header">
-				<svg class="Exp-close _jsX" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg>
-				<div class="Exp-title">
-				  <svg preserveAspectRatio="xMidYMid meet">
-				    <use xlink:href="./svg/sprites.svg#hulu"></use>
-				  </svg>
+			<div class="Exp-content">
+				<div class="Exp-header">
+					<svg class="Exp-close _jsX" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg>
+					<div class="Exp-title">
+					  <svg preserveAspectRatio="xMidYMid meet">
+					    <use xlink:href="./svg/sprites.svg#hulu"></use>
+					  </svg>
+					</div>
 				</div>
+				<article class="Exp-body">
+					<svg class="Exp-hero" viewbox="0 0 2003 1381" preserveAspectRatio="xMidYMid meet">
+						<use xlink:href="./svg/sprites.svg#ipad"></use>
+					    <image xlink:href="./img/camppokemon_01.jpg" width="1638" height="1228" transform="translate(181 74)"/>
+					</svg>
+					<h3 class="u-blockcenter u-maxw750">article header</h3>
+					<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
+					<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
+				</article>
 			</div>
-			<article class="Exp-body">
-				<svg class="Exp-hero" viewbox="0 0 2003 1381" preserveAspectRatio="xMidYMid meet">
-					<use xlink:href="./svg/sprites.svg#ipad"></use>
-				    <image xlink:href="../img/camppokemon_01.jpg" width="1638" height="1228" transform="translate(181 74)"/>
-				</svg>
-				<h3 class="u-blockcenter u-maxw750">article header</h3>
-				<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
-				<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
-			</article>
 		</div>
 	</div>
 </section>
 <section class="Exp">
 	<div class="Exp-modal">
 		<div class="Exp-dialog">
-			<div class="Exp-header">
-				<svg class="Exp-close _jsX" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg>
-				<div class="Exp-title">
-				  <svg preserveAspectRatio="xMidYMid meet">
-				  	<use xlink:href="./svg/sprites.svg#ironman"></use>
-				  </svg>
+			<div class="Exp-content">
+				<div class="Exp-header">
+					<svg class="Exp-close _jsX" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg>
+					<div class="Exp-title">
+					  <svg preserveAspectRatio="xMidYMid meet">
+					  	<use xlink:href="./svg/sprites.svg#ironman"></use>
+					  </svg>
+					</div>
 				</div>
+				<article class="Exp-body">
+					<svg class="Exp-hero" viewbox="0 0 2003 1381" preserveAspectRatio="xMidYMid meet">
+						<use xlink:href="./svg/sprites.svg#ipad"></use>
+					    <image xlink:href="//i.imgur.com/vFeGNlE.png" width="1638" height="1228" transform="translate(181 74)"/>
+					</svg>
+					<h3 class="u-blockcenter u-maxw750">article header</h3>
+					<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
+					<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
+				</article>
 			</div>
-			<article class="Exp-body">
-				<svg class="Exp-hero" viewbox="0 0 2003 1381" preserveAspectRatio="xMidYMid meet">
-					<use xlink:href="./svg/sprites.svg#ipad"></use>
-				    <image xlink:href="//i.imgur.com/vFeGNlE.png" width="1638" height="1228" transform="translate(181 74)"/>
-				</svg>
-				<h3 class="u-blockcenter u-maxw750">article header</h3>
-				<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
-				<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
-			</article>
 		</div>
 	</div>
 </section>
 <section class="Exp">
 	<div class="Exp-modal">
 		<div class="Exp-dialog">
-			<div class="Exp-header">
-				<svg class="Exp-close _jsX" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg>
-				<div class="Exp-title">
-				  <svg preserveAspectRatio="xMidYMid meet">
-				  	<use xlink:href="./svg/sprites.svg#keynotes"></use>
-				  </svg>
+			<div class="Exp-content">
+				<div class="Exp-header">
+					<svg class="Exp-close _jsX" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg>
+					<div class="Exp-title">
+					  <svg preserveAspectRatio="xMidYMid meet">
+					  	<use xlink:href="./svg/sprites.svg#keynotes"></use>
+					  </svg>
+					</div>
 				</div>
+				<article class="Exp-body">
+					<svg class="Exp-hero" viewbox="0 0 2003 1381" preserveAspectRatio="xMidYMid meet">
+						<use xlink:href="./svg/sprites.svg#ipad"></use>
+					    <image xlink:href="//i.imgur.com/vFeGNlE.png" width="1638" height="1228" transform="translate(181 74)"/>
+					</svg>
+					<h3 class="u-blockcenter u-maxw750">article header</h3>
+					<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
+					<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
+				</article>
 			</div>
-			<article class="Exp-body">
-				<svg class="Exp-hero" viewbox="0 0 2003 1381" preserveAspectRatio="xMidYMid meet">
-					<use xlink:href="./svg/sprites.svg#ipad"></use>
-				    <image xlink:href="//i.imgur.com/vFeGNlE.png" width="1638" height="1228" transform="translate(181 74)"/>
-				</svg>
-				<h3 class="u-blockcenter u-maxw750">article header</h3>
-				<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
-				<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
-			</article>
 		</div>
 	</div>
 </section>
 <section class="Exp">
 	<div class="Exp-modal">
 		<div class="Exp-dialog">
-			<div class="Exp-header">
-				<svg class="Exp-close _jsX" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg>
-				<div class="Exp-title">
-				  <svg preserveAspectRatio="xMidYMid meet">
-				  	<use xlink:href="./svg/sprites.svg#lukebulla"></use>
-				  </svg>
+			<div class="Exp-content">
+				<div class="Exp-header">
+					<svg class="Exp-close _jsX" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg>
+					<div class="Exp-title">
+					  <svg preserveAspectRatio="xMidYMid meet">
+					  	<use xlink:href="./svg/sprites.svg#lukebulla"></use>
+					  </svg>
+					</div>
 				</div>
+				<article class="Exp-body">
+					<svg class="Exp-hero" viewbox="0 0 2003 1381" preserveAspectRatio="xMidYMid meet">
+						<use xlink:href="./svg/sprites.svg#ipad"></use>
+					    <image xlink:href="//i.imgur.com/vFeGNlE.png" width="1638" height="1228" transform="translate(181 74)"/>
+					</svg>
+					<h3 class="u-blockcenter u-maxw750">article header</h3>
+					<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
+					<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
+				</article>
 			</div>
-			<article class="Exp-body">
-				<svg class="Exp-hero" viewbox="0 0 2003 1381" preserveAspectRatio="xMidYMid meet">
-					<use xlink:href="./svg/sprites.svg#ipad"></use>
-				    <image xlink:href="//i.imgur.com/vFeGNlE.png" width="1638" height="1228" transform="translate(181 74)"/>
-				</svg>
-				<h3 class="u-blockcenter u-maxw750">article header</h3>
-				<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
-				<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
-			</article>
 		</div>
 	</div>
 </section>
@@ -249,23 +269,25 @@
 <section class="Exp">
 	<div class="Exp-modal">
 		<div class="Exp-dialog">
-			<div class="Exp-header">
-				<svg class="Exp-close _jsX" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg>
-				<div class="Exp-title">
-				  <svg preserveAspectRatio="xMidYMid meet">
-				  	<use xlink:href="./svg/sprites.svg#mls"></use>
-				  </svg>
+			<div class="Exp-content">
+				<div class="Exp-header">
+					<svg class="Exp-close _jsX" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg>
+					<div class="Exp-title">
+					  <svg preserveAspectRatio="xMidYMid meet">
+					  	<use xlink:href="./svg/sprites.svg#mls"></use>
+					  </svg>
+					</div>
 				</div>
+				<article class="Exp-body">
+					<svg class="Exp-hero" viewbox="0 0 2003 1381" preserveAspectRatio="xMidYMid meet">
+						<use xlink:href="./svg/sprites.svg#ipad"></use>
+					    <image xlink:href="//i.imgur.com/vFeGNlE.png" width="1638" height="1228" transform="translate(181 74)"/>
+					</svg>
+					<h3 class="u-blockcenter u-maxw750">article header</h3>
+					<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
+					<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
+				</article>
 			</div>
-			<article class="Exp-body">
-				<svg class="Exp-hero" viewbox="0 0 2003 1381" preserveAspectRatio="xMidYMid meet">
-					<use xlink:href="./svg/sprites.svg#ipad"></use>
-				    <image xlink:href="//i.imgur.com/vFeGNlE.png" width="1638" height="1228" transform="translate(181 74)"/>
-				</svg>
-				<h3 class="u-blockcenter u-maxw750">article header</h3>
-				<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
-				<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
-			</article>
 		</div>
 	</div>
 </section>
@@ -273,23 +295,25 @@
 <section class="Exp">
 	<div class="Exp-modal">
 		<div class="Exp-dialog">
-			<div class="Exp-header">
-				<svg class="Exp-close _jsX" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg>
-				<div class="Exp-title">
-				  <svg preserveAspectRatio="xMidYMid meet">
-				  	<use xlink:href="./svg/sprites.svg#microsoft"></use>
-				  </svg>
+			<div class="Exp-content">
+				<div class="Exp-header">
+					<svg class="Exp-close _jsX" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg>
+					<div class="Exp-title">
+					  <svg preserveAspectRatio="xMidYMid meet">
+					  	<use xlink:href="./svg/sprites.svg#microsoft"></use>
+					  </svg>
+					</div>
 				</div>
+				<article class="Exp-body">
+					<svg class="Exp-hero" viewbox="0 0 2003 1381" preserveAspectRatio="xMidYMid meet">
+						<use xlink:href="./svg/sprites.svg#ipad"></use>
+					    <image xlink:href="//i.imgur.com/vFeGNlE.png" width="1638" height="1228" transform="translate(181 74)"/>
+					</svg>
+					<h3 class="u-blockcenter u-maxw750">article header</h3>
+					<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
+					<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
+				</article>
 			</div>
-			<article class="Exp-body">
-				<svg class="Exp-hero" viewbox="0 0 2003 1381" preserveAspectRatio="xMidYMid meet">
-					<use xlink:href="./svg/sprites.svg#ipad"></use>
-				    <image xlink:href="//i.imgur.com/vFeGNlE.png" width="1638" height="1228" transform="translate(181 74)"/>
-				</svg>
-				<h3 class="u-blockcenter u-maxw750">article header</h3>
-				<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
-				<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
-			</article>
 		</div>
 	</div>
 </section>
@@ -297,165 +321,178 @@
 <section class="Exp">
 	<div class="Exp-modal">
 		<div class="Exp-dialog">
-			<div class="Exp-header">
-				<svg class="Exp-close _jsX" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg>
-				<div class="Exp-title">
-				  <svg preserveAspectRatio="xMidYMid meet">
-				  	<use xlink:href="./svg/sprites.svg#nike"></use>
-				  </svg>
+			<div class="Exp-content">
+				<div class="Exp-header">
+					<svg class="Exp-close _jsX" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg>
+					<div class="Exp-title">
+					  <svg preserveAspectRatio="xMidYMid meet">
+					  	<use xlink:href="./svg/sprites.svg#nike"></use>
+					  </svg>
+					</div>
 				</div>
+				<article class="Exp-body">
+					<svg class="Exp-hero" viewbox="0 0 2003 1381" preserveAspectRatio="xMidYMid meet">
+						<use xlink:href="./svg/sprites.svg#ipad"></use>
+					    <image xlink:href="//i.imgur.com/vFeGNlE.png" width="1638" height="1228" transform="translate(181 74)"/>
+					</svg>
+					<h3 class="u-blockcenter u-maxw750">article header</h3>
+					<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
+					<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
+				</article>
 			</div>
-			<article class="Exp-body">
-				<svg class="Exp-hero" viewbox="0 0 2003 1381" preserveAspectRatio="xMidYMid meet">
-					<use xlink:href="./svg/sprites.svg#ipad"></use>
-				    <image xlink:href="//i.imgur.com/vFeGNlE.png" width="1638" height="1228" transform="translate(181 74)"/>
-				</svg>
-				<h3 class="u-blockcenter u-maxw750">article header</h3>
-				<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
-				<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
-			</article>
 		</div>
 	</div>
 </section>
 <section class="Exp">
 	<div class="Exp-modal">
 		<div class="Exp-dialog">
-			<div class="Exp-header">
-				<svg class="Exp-close _jsX" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg>
-				<div class="Exp-title">
-				  <svg preserveAspectRatio="xMidYMid meet">
-				  	<use xlink:href="./svg/sprites.svg#nintendo"></use>
-				  </svg>
+			<div class="Exp-content">
+				<div class="Exp-header">
+					<svg class="Exp-close _jsX" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg>
+					<div class="Exp-title">
+					  <svg preserveAspectRatio="xMidYMid meet">
+					  	<use xlink:href="./svg/sprites.svg#nintendo"></use>
+					  </svg>
+					</div>
 				</div>
+				<article class="Exp-body">
+					<svg class="Exp-hero" viewbox="0 0 2003 1381" preserveAspectRatio="xMidYMid meet">
+						<use xlink:href="./svg/sprites.svg#ipad"></use>
+					    <image xlink:href="//i.imgur.com/vFeGNlE.png" width="1638" height="1228" transform="translate(181 74)"/>
+					</svg>
+					<h3 class="u-blockcenter u-maxw750">article header</h3>
+					<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
+					<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
+				</article>
 			</div>
-			<article class="Exp-body">
-				<svg class="Exp-hero" viewbox="0 0 2003 1381" preserveAspectRatio="xMidYMid meet">
-					<use xlink:href="./svg/sprites.svg#ipad"></use>
-				    <image xlink:href="//i.imgur.com/vFeGNlE.png" width="1638" height="1228" transform="translate(181 74)"/>
-				</svg>
-				<h3 class="u-blockcenter u-maxw750">article header</h3>
-				<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
-				<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
-			</article>
 		</div>
 	</div>
 </section>
 <section class="Exp">
 	<div class="Exp-modal">
 		<div class="Exp-dialog">
-			<div class="Exp-header">
-				<svg class="Exp-close _jsX" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg>
-				<div class="Exp-title">
-				  <svg preserveAspectRatio="xMidYMid meet">
-				  	<use xlink:href="./svg/sprites.svg#colliers"></use>
-				  </svg>
+			<div class="Exp-content">
+				<div class="Exp-header">
+					<svg class="Exp-close _jsX" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg>
+					<div class="Exp-title">
+					  <svg preserveAspectRatio="xMidYMid meet">
+					  	<use xlink:href="./svg/sprites.svg#colliers"></use>
+					  </svg>
+					</div>
 				</div>
+				<article class="Exp-body">
+					<svg class="Exp-hero" viewbox="0 0 2003 1381" preserveAspectRatio="xMidYMid meet">
+						<use xlink:href="./svg/sprites.svg#ipad"></use>
+					    <image xlink:href="//i.imgur.com/vFeGNlE.png" width="1638" height="1228" transform="translate(181 74)"/>
+					</svg>
+					<h3 class="u-blockcenter u-maxw750">article header</h3>
+					<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
+					<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
+				</article>
 			</div>
-			<article class="Exp-body">
-				<svg class="Exp-hero" viewbox="0 0 2003 1381" preserveAspectRatio="xMidYMid meet">
-					<use xlink:href="./svg/sprites.svg#ipad"></use>
-				    <image xlink:href="//i.imgur.com/vFeGNlE.png" width="1638" height="1228" transform="translate(181 74)"/>
-				</svg>
-				<h3 class="u-blockcenter u-maxw750">article header</h3>
-				<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
-				<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
-			</article>
 		</div>
 	</div>
 </section>
 <section class="Exp">
 	<div class="Exp-modal">
 		<div class="Exp-dialog">
-			<div class="Exp-header">
-				<svg class="Exp-close _jsX" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg>
-				<div class="Exp-title">
-				  <svg preserveAspectRatio="xMidYMid meet">
-				  	<use xlink:href="./svg/sprites.svg#soundersfc"></use>
-				  </svg>
+			<div class="Exp-content">
+				<div class="Exp-header">
+					<svg class="Exp-close _jsX" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg>
+					<div class="Exp-title">
+					  <svg preserveAspectRatio="xMidYMid meet">
+					  	<use xlink:href="./svg/sprites.svg#soundersfc"></use>
+					  </svg>
+					</div>
 				</div>
+				<article class="Exp-body">
+					<svg class="Exp-hero" viewbox="0 0 2003 1381" preserveAspectRatio="xMidYMid meet">
+						<use xlink:href="./svg/sprites.svg#ipad"></use>
+					    <image xlink:href="//i.imgur.com/vFeGNlE.png" width="1638" height="1228" transform="translate(181 74)"/>
+					</svg>
+					<h3 class="u-blockcenter u-maxw750">article header</h3>
+					<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
+					<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
+				</article>
 			</div>
-			<article class="Exp-body">
-				<svg class="Exp-hero" viewbox="0 0 2003 1381" preserveAspectRatio="xMidYMid meet">
-					<use xlink:href="./svg/sprites.svg#ipad"></use>
-				    <image xlink:href="//i.imgur.com/vFeGNlE.png" width="1638" height="1228" transform="translate(181 74)"/>
-				</svg>
-				<h3 class="u-blockcenter u-maxw750">article header</h3>
-				<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
-				<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
-			</article>
 		</div>
 	</div>
 </section>
 <section class="Exp">
 	<div class="Exp-modal">
 		<div class="Exp-dialog">
-			<div class="Exp-header">
-				<svg class="Exp-close _jsX" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg>
-				<div class="Exp-title">
-				  <svg preserveAspectRatio="xMidYMid meet">
-				  	<use xlink:href="./svg/sprites.svg#spotify"></use>
-				  </svg>
+			<div class="Exp-content">
+				<div class="Exp-header">
+					<svg class="Exp-close _jsX" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg>
+					<div class="Exp-title">
+					  <svg preserveAspectRatio="xMidYMid meet">
+					  	<use xlink:href="./svg/sprites.svg#spotify"></use>
+					  </svg>
+					</div>
 				</div>
+				<article class="Exp-body">
+					<svg class="Exp-hero" viewbox="0 0 2003 1381" preserveAspectRatio="xMidYMid meet">
+						<use xlink:href="./svg/sprites.svg#ipad"></use>
+					    <image xlink:href="//i.imgur.com/vFeGNlE.png" width="1638" height="1228" transform="translate(181 74)"/>
+					</svg>
+					<h3 class="u-blockcenter u-maxw750">article header</h3>
+					<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
+					<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
+				</article>
 			</div>
-			<article class="Exp-body">
-				<svg class="Exp-hero" viewbox="0 0 2003 1381" preserveAspectRatio="xMidYMid meet">
-					<use xlink:href="./svg/sprites.svg#ipad"></use>
-				    <image xlink:href="//i.imgur.com/vFeGNlE.png" width="1638" height="1228" transform="translate(181 74)"/>
-				</svg>
-				<h3 class="u-blockcenter u-maxw750">article header</h3>
-				<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
-				<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
-			</article>
 		</div>
 	</div>
 </section>
 <section class="Exp">
 	<div class="Exp-modal">
 		<div class="Exp-dialog">
-			<div class="Exp-header">
-				<svg class="Exp-close _jsX" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg>
-				<div class="Exp-title">
-				  <svg preserveAspectRatio="xMidYMid meet">
-				  	<use xlink:href="./svg/sprites.svg#ubisoft"></use>
-				  </svg>
+			<div class="Exp-content">
+				<div class="Exp-header">
+					<svg class="Exp-close _jsX" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg>
+					<div class="Exp-title">
+					  <svg preserveAspectRatio="xMidYMid meet">
+					  	<use xlink:href="./svg/sprites.svg#ubisoft"></use>
+					  </svg>
+					</div>
 				</div>
+				<article class="Exp-body">
+					<svg class="Exp-hero" viewbox="0 0 2003 1381" preserveAspectRatio="xMidYMid meet">
+						<use xlink:href="./svg/sprites.svg#ipad"></use>
+					    <image xlink:href="//i.imgur.com/vFeGNlE.png" width="1638" height="1228" transform="translate(181 74)"/>
+					</svg>
+					<h3 class="u-blockcenter u-maxw750">article header</h3>
+					<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
+					<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
+				</article>
 			</div>
-			<article class="Exp-body">
-				<svg class="Exp-hero" viewbox="0 0 2003 1381" preserveAspectRatio="xMidYMid meet">
-					<use xlink:href="./svg/sprites.svg#ipad"></use>
-				    <image xlink:href="//i.imgur.com/vFeGNlE.png" width="1638" height="1228" transform="translate(181 74)"/>
-				</svg>
-				<h3 class="u-blockcenter u-maxw750">article header</h3>
-				<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
-				<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
-			</article>
 		</div>
 	</div>
 </section>
 <section class="Exp">
 	<div class="Exp-modal">
 		<div class="Exp-dialog">
-			<div class="Exp-header">
-				<svg class="Exp-close _jsX" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg>
-				<div class="Exp-title">
-				  <svg preserveAspectRatio="xMidYMid meet">
-				  	<use xlink:href="./svg/sprites.svg#xbox"></use>
-				  </svg>
+			<div class="Exp-content">
+				<div class="Exp-header">
+					<svg class="Exp-close _jsX" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg>
+					<div class="Exp-title">
+					  <svg preserveAspectRatio="xMidYMid meet">
+					  	<use xlink:href="./svg/sprites.svg#xbox"></use>
+					  </svg>
+					</div>
 				</div>
+				<article class="Exp-body">
+					<svg class="Exp-hero" viewbox="0 0 2003 1381" preserveAspectRatio="xMidYMid meet">
+						<use xlink:href="./svg/sprites.svg#ipad"></use>
+					    <image xlink:href="//i.imgur.com/vFeGNlE.png" width="1638" height="1228" transform="translate(181 74)"/>
+					</svg>
+					<h3 class="u-blockcenter u-maxw750">article header</h3>
+					<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
+					<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
+				</article>
 			</div>
-			<article class="Exp-body">
-				<svg class="Exp-hero" viewbox="0 0 2003 1381" preserveAspectRatio="xMidYMid meet">
-					<use xlink:href="./svg/sprites.svg#ipad"></use>
-				    <image xlink:href="//i.imgur.com/vFeGNlE.png" width="1638" height="1228" transform="translate(181 74)"/>
-				</svg>
-				<h3 class="u-blockcenter u-maxw750">article header</h3>
-				<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
-				<p class="u-blockcenter u-maxw750">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem, nobis dicta optio aliquid dolorum ea at a. Dolorum eum blanditiis aspernatur harum facere exercitationem, consequuntur provident deserunt nulla vitae?</p>
-			</article>
 		</div>
 	</div>
 </section>
-
 <h2 class="section-hdr">more work</h2>
 <div class="clearfix row">
 	<section class="grid"><img class="img1x1" src="./img/ffffff-0.png" alt=""/><div class="modal"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><svg class="close" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg><svg preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#xbox"></use></svg></div><div class="modal-body"><img class="modal-hero" src="//i.imgur.com/vFeGNlE.png" alt=""/></div></div></div></div><figure class="effect _jsmod"><img src="./img/camppokemon_01.jpg" alt=""/><figcaption><svg preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#colliers"></use></svg><p>Milo went to the woods. He took a fun ride and never came back.</p></figcaption></figure></section>
@@ -477,33 +514,29 @@
 	<section class="grid"><img class="img1x1" src="./img/ffffff-0.png" alt=""/><div class="modal"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><svg class="close" preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#times"></use></svg><svg preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#xbox"></use></svg></div><div class="modal-body"><img class="modal-hero" src="//i.imgur.com/vFeGNlE.png" alt=""/></div></div></div></div><figure class="effect _jsmod"><img src="./img/camppokemon_01.jpg" alt=""/><figcaption><svg preserveAspectRatio="xMidYMid meet"><use xlink:href="./svg/sprites.svg#xbox"></use></svg><p>Milo went to the woods. He took a fun ride and never came back.</p></figcaption></figure></section>
 </div>
 <h2 class="section-hdr">contact</h2>
-<center>
-	<div class="u-inlineblock thumbcircle"></div>
-	<div class="vertline"></div>
-	<p>...</p>
-	<div class="vertline2"></div>
-	<div class="u-inlineblock thumbcircle"></div>
-</center>
+<p class="u-txtcenter profile-links">
+	<a href="//twitter.com/6trak" target="_blank">@6trak on Twitter</a>
+	<a href="//www.linkedin.com/in/joeleby" target="_blank">LinkedIn</a>
+</p>
 <footer>&copy;thewanted <script>document.write(new Date().getFullYear())</script></footer>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="./js/svg4everybody.min.js"></script>
-<script>svg4everybody();
+<script>svg4everybody();</script>
+<script src="js/scale.fix.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
 
 //var prev = getElementsByClassName('.preview');
-//var prev = getElementsByClassName('.preview');
+
 var _body = $(document.body);
 $('.Exp').on('click',function(e){
 	//e.stopPropagation();
 	var _this = $(this);
 	if(!_this.hasClass('full')){
+		_body.addClass('modal-open');
 		var top = _this[0].getBoundingClientRect().top;
-		var _dialog = _this.find('.Exp-dialog');
-		_dialog.animate({top:top+'px'}, 1, function(){
-			_this.addClass('full');
-			_dialog.animate({top:'0', height:'100%'}, 500);
-			_body.addClass('modal-open');
-		});
-
+		var _modal = _this.find('.Exp-modal');
+		_this.addClass('full');
+		_modal.css({top:top+'px'}).animate({top:'0px', height:'100%'}, 500).addClass('full');
 	}
 });
 $('._jsX').on('click',function(e){
@@ -511,11 +544,13 @@ $('._jsX').on('click',function(e){
 	var _this = $(this);
 	var _Exp = _this.closest('.Exp');
 	var top = _Exp[0].getBoundingClientRect().top;
-	var _dialog = _Exp.find('.Exp-dialog');
-	_dialog.scrollTop(0).animate({top:top+'px', height:'388px'}, 500, function(){
+	var _modal = _Exp.find('.Exp-modal');
+	_modal.scrollTop(0);
+	_modal.removeClass('full');
+	_modal.animate({top:top+'px', height:'388px'}, 500, function(){
 		_Exp.removeClass('full');
-		_body.removeClass('modal-open');
 	});
+	_body.removeClass('modal-open');
 });
 $('.close').on('click',function(e){
 	e.stopPropagation();
@@ -534,6 +569,5 @@ $('a._jsmod').on('click',function(e){
 });
 
 </script>
-<script src="js/scale.fix.js"></script>
 </body>
 </html>

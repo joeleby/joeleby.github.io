@@ -56,22 +56,18 @@
 }
 
 .modal-body {
-  position: relative;
   padding: 15px;
   text-align: center;
+  background-color: #f9f6ea;
+}
+.modal-body >p, .modal-body >h4 {
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .modal-hero{
   width:100%;
   max-width: 800px;
-
-}
-.project-article{
-  max-width:550px;
-  margin:auto;
-  text-align: left
-}
-.project-article h3{
-  font-size: 30px
 }
 
 /*EXP modal*/
@@ -89,32 +85,39 @@
 .Exp:nth-of-type(6) .Exp-header{background-color:#c1c1c1}
 
 .Exp-modal {
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
-}
-.Exp.full .Exp-modal {
-  position: fixed;
-  z-index: 1050;
-}
-.Exp-dialog {
-  background-color: #f9f6ea;
-  top:0;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
   right:0;
   left:0;
   height: 388px;
   overflow: hidden;
   overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
-  outline: 0;
+  -webkit-transform: translate3d(0,0,0); 
+  transform: translate3d(0,0,0);
 }
-
-.Exp.full .Exp-dialog {
-  position: absolute;
+.Exp.full .Exp-modal {
+  position: fixed;
+  z-index: 1050;
+}
+.Exp-modal.full {
   overflow-y: auto;
 }
 
+.Exp-dialog {
+  position: relative;
+  width: auto;
+  background-color: #f9f6ea;
+}
+
+.Exp.full .Exp-dialog {}
+.Exp-content {
+  position: relative;
+  background-color: #f9f6ea;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  outline: 0;
+  min-height: 100vh;
+}
 .Exp-header {
   padding: 15px 15px 0;
   color:#fff;
@@ -146,7 +149,6 @@
 .Exp-title p{
   font-family:'Cormorant Garamond', serif;
   font-size:55px;
-  max-width: 850px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -166,12 +168,12 @@
   margin-left:auto;
 }
 .Exp:not(.full) .Exp-h3{display: none;}
-
 .Exp-hero{
-  transition: transform 0.3s;
-}
-.Exp:not(.full) .Exp-hero{
   transform: translateY(-200px);
+  transition: transform 0.2s;
+}
+.Exp.full .Exp-hero{
+  transform: translateY(0px);
 }
 .Exp:not(.full):hover .Exp-hero{
   transform: translateY(-230px);
