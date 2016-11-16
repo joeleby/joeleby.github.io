@@ -3,7 +3,7 @@ header{
   padding: 45px 0;
   text-align: center;
 }
-#hero{
+.hero{
   max-width:300px;
 }
 
