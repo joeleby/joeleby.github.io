@@ -1,23 +1,29 @@
 
 header{
-  padding: 45px 0;
+  padding-bottom: 45px;
   text-align: center;
 }
 .hero{
+  display: block;
   max-width:300px;
+  margin: 45px auto 0;
 }
 
-header p{
-  margin:10px auto 15px;
-  padding: 0 15px;
-}
 .profile-title{
   font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
   font-size: 19px;
+  padding: 0 15px;
   max-width: 510px;
+  margin:10px auto 15px;
 }
 
-.profile-links a{
+.profile-links{
+  padding: 0 15px;
+  margin:10px auto 15px;
+}
+.profile-links .a{
+  cursor: pointer;
   padding: 0 6px;
   font-size: 12px;
   color: #8d8d8d;
@@ -25,27 +31,25 @@ header p{
   white-space: nowrap;
 }
 @media (min-width: 420px) {
-  .profile-links a{
+  .profile-links .a{
     padding: 0 15px;
   }
 }
-.profile-links a:first-child{
+.profile-links .a:first-child{
   padding-left: 0;
 }
-.profile-links a:last-child{
+.profile-links .a:last-child{
   padding-right: 0;
 }
-
-section{}
-
-body>section:nth-of-type(6n+1) .preview, body>section:nth-of-type(6n+1) .modal-header{background-color:#0080ed}
-body>section:nth-of-type(6n+2) .preview, body>section:nth-of-type(6n+2) .modal-header{background-color:#7cb940}
-body>section:nth-of-type(6n+3) .preview, body>section:nth-of-type(6n+3) .modal-header{background-color:#939393}
-body>section:nth-of-type(6n+4) .preview, body>section:nth-of-type(6n+4) .modal-header{background-color:#c6c6c6}
-body>section:nth-of-type(6n+5) .preview, body>section:nth-of-type(6n+5) .modal-header{background-color:#989898}
-body>section:nth-of-type(6n+6) .preview, body>section:nth-of-type(6n+6) .modal-header{background-color:#c1c1c1}
-
-.grid .modal-header, ._aboutme .modal-header{background-color:#6b6b6b}
+.downarrow{
+  width:80px;
+  height: 80px;
+}
+.leftarrow{
+  width:80px;
+  height: 80px;
+  vertical-align: middle;
+}
 
 .section-hdr{
   line-height: 1;
@@ -56,31 +60,24 @@ body>section:nth-of-type(6n+6) .preview, body>section:nth-of-type(6n+6) .modal-h
   color:black;
   font-family: 'Cormorant Garamond', serif;
 }
-
-.grid{
-  width:100%;
-  float:left;
-  position: relative;
+.flexr{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  margin:8px 10%;
 }
-.row {margin: 8px 10%;}
+.grid{width:100%;position: relative;}
+@media (min-width: 320px) {.grid{width:50%;}}
+@media (min-width: 630px) {.grid{width:33.3333%;}}
+@media (min-width: 960px) {.grid{width:25%;}}
 
-@media (min-width: 320px) {
-  .grid{width:50%;}
-}
-
-@media (min-width: 630px) {
-  .grid{width:33.3333%;}
-}
-
-@media (min-width: 960px) {
-  .grid{width:25%;}
-}
 .grid .img1x1{
   width: 100%;
   height: auto;
 }
 /* Common hover effect style */
 .grid figure {
+  background-color: black;
   position: absolute;
   top:0;
   right:0;
@@ -96,21 +93,43 @@ body>section:nth-of-type(6n+6) .preview, body>section:nth-of-type(6n+6) .modal-h
   position: relative;
   display: block;
   min-height: 100%;
-  max-width: 100%;
-  opacity: 0.8;
-}
+  max-width: none;
+  width: -webkit-calc(100% + 60px);
+  width: -moz-calc(100% + 60px);
+  width: calc(100% + 60px);
+  opacity: 1;
 
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  -o-transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-30px,0,0) scale(1.12);
+  -ms-transform: translate3d(-30px,0,0) scale(1.12);
+  -o-transform: translate3d(-30px,0,0) scale(1.12);
+  transform: translate3d(-30px,0,0) scale(1.12);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.grid figure:hover img {
+  opacity: 0.5;
+  -webkit-transform: translate3d(0,0,0) scale(1);
+  -ms-transform: translate3d(0,0,0) scale(1);
+  -o-transform: translate3d(0,0,0) scale(1);
+  transform: translate3d(0,0,0) scale(1);
+}
 .grid figure figcaption {
   color: #fff;
   text-transform: uppercase;
   -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
 .grid figure figcaption::before, .grid figure figcaption::after {
   pointer-events: none;
 }
-
 .grid figure figcaption{
   position: absolute;
   top: 0;
@@ -118,58 +137,27 @@ body>section:nth-of-type(6n+6) .preview, body>section:nth-of-type(6n+6) .modal-h
   width: 100%;
   height: 100%;
 }
-.grid figure p {
-  margin: 0;
-  letter-spacing: 1px;
-  font-size: 68.5%;
-}
-/*---------------*/
-/***** Milo *****/
-/*---------------*/
-figure.effect {background: black;}
 
-figure.effect img {
-  max-width: none;
-  width: -webkit-calc(100% + 60px);
-  width: calc(100% + 60px);
-  opacity: 1;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-30px,0,0) scale(1.12);
-  transform: translate3d(-30px,0,0) scale(1.12);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-figure.effect:hover img {
-  opacity: 0.5;
-  -webkit-transform: translate3d(0,0,0) scale(1);
-  transform: translate3d(0,0,0) scale(1);
-}
-
-figure.effect p {
-  padding: 0 10px;
-  text-align: center;
-  opacity: 0;
-  /*-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;*/
-  -webkit-transition: opacity 0.35s;
-  transition: opacity 0.35s;
-  /*transition: opacity 0.35s, transform 0.35s;*/
-  /*-webkit-transform: translate3d(-40px,0,0);*/
-  /*transform: translate3d(-40px,0,0);*/
-}
-
-figure.effect:hover p {
-  opacity: 1;
-  /*-webkit-transform: translate3d(0,0,0);*/
-  /*transform: translate3d(0,0,0);*/
-}
-figure.effect svg {
+.grid figure svg {
   width: 80%;
   height: 100%;
   transition: height 0.35s;
-
 }
-figure.effect:hover svg{
+.grid figure:hover svg{
   height: 60%;
+}
+
+.grid figure p {
+  margin: 0;
+  font-size: 68.5%;
+  line-height: 1;
+  padding: 0 10px;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s;
+  -o-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+.grid figure:hover p {
+  opacity: 1;
 }

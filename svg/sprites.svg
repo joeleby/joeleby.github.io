@@ -24,8 +24,8 @@
 
 	<symbol id="ipad">
         <title>iPad</title>
-	    <path d="M1899.7,1384H100.3C45.1,1384,0,1338.9,0,1283.7V106.3C0,51.2,45.1,6,100.3,6H1899.7C1954.9,6,2000,51.1,2000,106.3V1283.7C2000,1338.9,1954.9,1384,1899.7,1384Z" opacity="0.08" stroke="#f2f2f2" stroke-miterlimit="10" stroke-width="3" style="isolation:isolate" transform="translate(1.5 -4.5)"/>
-	    <circle cx="93.9" cy="690.5" fill="#f6f6f6" r="51.4"/>
+	    <path stroke="#f2f2f2" stroke-miterlimit="10" stroke-width="3" opacity="0.08" d="M1899.7,1384H100.3C45.1,1384,0,1338.9,0,1283.7V106.3C0,51.2,45.1,6,100.3,6H1899.7C1954.9,6,2000,51.1,2000,106.3V1283.7C2000,1338.9,1954.9,1384,1899.7,1384Z"/>
+	    <circle cx="93.9" cy="690.5" fill="#f6f6f6" r="51.4" opacity="0.75"/>
 	    <circle cx="1913.5" cy="690.5" fill="#6c6c6c" r="9"/>
 	</symbol>
 	<symbol id="colliers" viewBox="35 35 230 230">
