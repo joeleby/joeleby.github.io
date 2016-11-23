@@ -1,0 +1,6 @@
+# Robots.txt file for http://joeleby.com
+# Disallow: /*/private/
+# Allow: /files/*/private/
+
+User-agent: *
+Sitemap: http://joeleby.com/sitemap.xml
