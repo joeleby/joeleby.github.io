@@ -1,12 +1,30 @@
-main>section:nth-of-type(odd), body>article:nth-of-type(odd) .modal-header{ background-color:#949494; }
-main>section:nth-of-type(even), body>article:nth-of-type(even) .modal-header{ background-color:#c4c4c4; }
-main>section:nth-of-type(1), body>article:nth-of-type(1) .modal-header{ background-color:#0080ed; }
-main>section:nth-of-type(2), body>article:nth-of-type(2) .modal-header{ background-color:#7cb940; }
+main>section:nth-of-type(odd), body>article:nth-of-type(odd) .mdl-header{ background-color:#949494; }
+main>section:nth-of-type(even), body>article:nth-of-type(even) .mdl-header{ background-color:#c4c4c4; }
+main>section:nth-of-type(1), body>article:nth-of-type(1) .mdl-header{ background-color:#0080ed; }
+main>section:nth-of-type(2), body>article:nth-of-type(2) .mdl-header{ background-color:#7cb940; }
 .Exp{
   height: 388px;
   overflow: hidden;
 }
 .Exp-header{text-align: center;}
+.Exp-logo{
+  transform: scale(2);
+}
+.Exp-h2{
+  color:white;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  max-width: 770px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px;
+}
+
+@media (min-width: 630px) {
+  .Exp-h2{
+    font-size: 35px;
+  }
+}
 .Exp-hero{
   display: block;
   max-width: 980px;
@@ -15,10 +33,10 @@ main>section:nth-of-type(2), body>article:nth-of-type(2) .modal-header{ backgrou
   -webkit-transition: transform 0.3s;
   -o-transition: transform 0.3s;
   transition: transform 0.3s;
-  -webkit-transform:translateY(100px);
-  -ms-transform:translateY(100px);
-  -o-transform:translateY(100px);
-  transform:translateY(100px);
+  -webkit-transform:translateY(40px);
+  -ms-transform:translateY(40px);
+  -o-transform:translateY(40px);
+  transform:translateY(40px);
 }
 .Exp:hover .Exp-hero{
   -webkit-transform:translateY(0);
@@ -50,15 +68,16 @@ main>section:nth-of-type(2), body>article:nth-of-type(2) .modal-header{ backgrou
   display: block;
 }
 
-.modal-content{
+.mdl-content{
   background-color: #f9f6ea;
   min-height: 100vh;
 }
-.modal-header{
+.mdl-header{
   text-align: center;
   position: relative;
   color:white;
   padding-top: 1px;
+  min-height: 388px;
 }
 .close{
   position: absolute;
@@ -71,9 +90,9 @@ main>section:nth-of-type(2), body>article:nth-of-type(2) .modal-header{ backgrou
   -ms-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: transform 0.25s;
-  -o-transition: transform 0.25s;
-  transition: transform 0.25s;
+  -webkit-transition: transform 0.25s ease-in-out;
+  -o-transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
   -webkit-transform-origin: 40px 40px;
   -moz-transform-origin: 40px 40px;
   -ms-transform-origin: 40px 40px;
@@ -86,7 +105,10 @@ main>section:nth-of-type(2), body>article:nth-of-type(2) .modal-header{ backgrou
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-.modal-h2{
+.mdl-logo{
+  transform: scale(2);
+}
+.mdl-h2{
   color:white;
   font-family: 'Cormorant Garamond', serif;
   font-size: 30px;
@@ -94,23 +116,20 @@ main>section:nth-of-type(2), body>article:nth-of-type(2) .modal-header{ backgrou
   margin-right: auto;
   margin-left: auto;
   padding: 0 15px;
-  opacity: 0;
-  -webkit-transition: opacity 0.5s;
-  -o-transition: opacity 0.5s;
-  transition: opacity 0.5s;
 }
-.in .modal-h2{
-  opacity: 1;
-}
+
 @media (min-width: 630px) {
-  .modal-h2{
+  .mdl-h2{
     font-size: 55px;
     letter-spacing: -2px;
   }
 }
 
-.modal-body{padding: 15px;}
-.modal-h3 {
+.mdl-body{
+  text-align: center;
+  padding: 15px;
+}
+.mdl-h3 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 30px;
     color: black;
@@ -118,17 +137,16 @@ main>section:nth-of-type(2), body>article:nth-of-type(2) .modal-header{ backgrou
     margin-bottom: 50px;
     margin-right: auto;
     margin-left: auto;
-    text-align: center;
 }
 
-.modal-body>svg, .modal-body>img{
+.mdl-body>svg, .mdl-body>img{
   display: block;
   width:1230px;
   max-width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
-.modal-body > p{
+.mdl-body > p{
   margin-top:55px;
   margin-bottom:55px;
 }
