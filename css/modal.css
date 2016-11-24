@@ -143,11 +143,14 @@ main>section:nth-of-type(2), body>article:nth-of-type(2) .mdl-header{ background
 
 .mdl-body>svg, .mdl-body>img{
   display: block;
-  width:1230px;
+  width:1400px;
   max-width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
+
+img.portrait{ width: 600px;}
+
 .mdl-body > p{
   margin-top:55px;
   margin-bottom:55px;
