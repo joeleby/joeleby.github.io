@@ -9,10 +9,11 @@ main>section:nth-of-type(6), body>article:nth-of-type(6) .mdl-header{ background
 .Exp{
   height: 388px;
   overflow: hidden;
+  padding: 0 20px;
 }
 .Exp-header{text-align: center;}
 .Exp-logo{
-  transform: scale(2);
+  transform: scale(1.6);
 }
 .Exp-h2{
   color:white;
@@ -21,12 +22,12 @@ main>section:nth-of-type(6), body>article:nth-of-type(6) .mdl-header{ background
   max-width: 770px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 15px;
+  padding: 0 50px;
 }
 
 @media (min-width: 630px) {
   .Exp-h2{
-    font-size: 40px;
+    font-size: 30px;
     letter-spacing: -2px;
   }
 }
@@ -112,7 +113,7 @@ main>section:nth-of-type(6), body>article:nth-of-type(6) .mdl-header{ background
   transform: rotate(90deg);
 }
 .mdl-logo{
-  transform: scale(2);
+  transform: scale(1.6);
 }
 .mdl-h2{
   color:white;
