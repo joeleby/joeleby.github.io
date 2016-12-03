@@ -8,11 +8,15 @@ header{
   max-width:300px;
   margin: 125px auto 40px;
 }
-
+@media (min-width: 630px) {
+  .hero{
+    max-width:400px;
+  }
+}
 .profile-title{
   font-family: 'Cormorant Garamond', serif;
   font-weight: 400;
-  font-size: 19px;
+  font-size: 40px;
   padding: 0 15px;
   max-width: 650px;
   margin:10px auto 15px;
@@ -25,7 +29,7 @@ header{
 .profile-links .a{
   cursor: pointer;
   padding: 0 6px;
-  font-size: 12px;
+  font-size: 24px;
   color: #8d8d8d;
   text-transform: uppercase;
   white-space: nowrap;
@@ -56,7 +60,6 @@ header{
   margin: 70px 0;
   text-align: center;
   font-size: 50px;
-  font-weight: 800;
   letter-spacing: -2px;
   color:black;
   font-family: 'Cormorant Garamond', serif;

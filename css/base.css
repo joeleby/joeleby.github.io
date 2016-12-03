@@ -66,7 +66,10 @@ h1, h2, h3, h4, h5, h6{font-family: inherit;font-weight: 400;line-height: 1.2;co
 h2{font-size: 55px;margin: 0}
 .h5 {font-size: 22px}
 p {margin: 0 0 10px}
-footer, footer h1{font-size: 14px;margin: 0}
+footer, footer h1{font-size: 16px;margin: 0; color: #bdb9a9; font-weight: normal;}
+footer{
+  text-align: center;
+}
 
 .u-txtcenter{text-align: center!important;}
 .u-blockcenter{margin-right:auto;margin-left:auto;}
