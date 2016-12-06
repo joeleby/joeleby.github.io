@@ -101,9 +101,7 @@
 
 		tm01.set(_modal, {top: _p.top + "px", height: _p.height})
 			.set(_modal, {className: '+=show'})
-			.add('expand')
-			.to(_modal, 0.75, {top:"0px", height:"100%"}, 'expand')
-			//.to(_modalh2, 0.5, {x:0}, 'expand')
+			.to(_modal, 0.5, { ease: Expo.easeOut, top:"0px", height:"100%"})
 			.set(_exp, {className: '+=on'});
 
 		if(!hash){
@@ -125,9 +123,7 @@
 			_modalh2 = _modal.querySelector('.mdl-h2'),
 			tm02 = new TimelineMax();
 		tm02.set(_modal, { scrollTop: 0})
-			.add('collapse')
-			//.to(_modalh2, 0.5, {x:900}, 'collapse')
-			.to(_modal, 0.5, {top: _p.top + "px", height: _p.height}, 'collapse')
+			.to(_modal, 0.5, { ease: Expo.easeOut, top: _p.top + "px", height: _p.height})
 			.set(_modal, {className: '-=show'})
 			.set(_exp, {className: '-=on'});
 
