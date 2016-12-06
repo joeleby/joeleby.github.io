@@ -88,7 +88,8 @@
 (function(){
 	"use strict";
 
-	var _p = {};
+	var _p = {},
+		_main = document.getElementById('main');
 
 	var opener = function(e, hash) {
 		var _exp = hash ? document.querySelector('[name="' + hash + '"]') : this,
@@ -102,7 +103,8 @@
 		tm01.set(_modal, {top: _p.top + "px", height: _p.height})
 			.set(_modal, {className: '+=show'})
 			.to(_modal, 0.5, { ease: Expo.easeOut, top:"0px", height:"100%"})
-			.set(_exp, {className: '+=on'});
+			.set(_exp, {className: '+=on'})
+			.set(_main, {display:'none'});
 
 		if(!hash){
 			if(history.replaceState) {
@@ -123,6 +125,7 @@
 			_modalh2 = _modal.querySelector('.mdl-h2'),
 			tm02 = new TimelineMax();
 		tm02.set(_modal, { scrollTop: 0})
+			.set(_main, {display:''})
 			.to(_modal, 0.5, { ease: Expo.easeOut, top: _p.top + "px", height: _p.height})
 			.set(_modal, {className: '-=show'})
 			.set(_exp, {className: '-=on'});
