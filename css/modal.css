@@ -12,9 +12,7 @@ main>section:nth-of-type(6), body>article:nth-of-type(6) .mdl-header{ background
   padding: 0 20px;
 }
 .Exp-header{text-align: center;}
-.Exp-logo{
-  /*transform: scale(1.6);*/
-}
+
 .Exp-h2{
   color:white;
   font-family: 'Cormorant Garamond', serif;
@@ -28,7 +26,6 @@ main>section:nth-of-type(6), body>article:nth-of-type(6) .mdl-header{ background
 @media (min-width: 630px) {
   .Exp-h2{
     font-size: 30px;
-    letter-spacing: -2px;
   }
 }
 .Exp-hero{
@@ -112,9 +109,7 @@ main>section:nth-of-type(6), body>article:nth-of-type(6) .mdl-header{ background
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-.mdl-logo{
-  /*transform: scale(1.6);*/
-}
+
 .mdl-h2{
   color:white;
   font-family: 'Cormorant Garamond', serif;
@@ -128,7 +123,6 @@ main>section:nth-of-type(6), body>article:nth-of-type(6) .mdl-header{ background
 @media (min-width: 630px) {
   .mdl-h2{
     font-size: 40px;
-    letter-spacing: -2px;
   }
 }
 
