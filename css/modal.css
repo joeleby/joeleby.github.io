@@ -73,6 +73,7 @@ main>section:nth-of-type(6), body>article:nth-of-type(6) .mdl-header{ background
 
 .mdl-content{
   background-color: #f9f6ea;
+  background-image: url('../img/film.gif');
   min-height: 100vh;
 }
 .mdl-header{
