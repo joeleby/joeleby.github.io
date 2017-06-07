@@ -6,6 +6,7 @@ main>section:nth-of-type(3), body>article:nth-of-type(3) .mdl-header{ background
 main>section:nth-of-type(4), body>article:nth-of-type(4) .mdl-header{ background-color:#6aa839; }
 main>section:nth-of-type(5), body>article:nth-of-type(5) .mdl-header{ background-color:#225887; }
 main>section:nth-of-type(6), body>article:nth-of-type(6) .mdl-header{ background-color:#38d665; }
+
 .Exp{
   height: 500px;
   overflow: hidden;
