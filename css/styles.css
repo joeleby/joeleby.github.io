@@ -15,24 +15,39 @@ header{
 }
 .profile-title{
   font-family: 'Cormorant Garamond', serif;
-  font-weight: 400;
-  font-size: 27px;
+  font-weight: 500;
+  font-size: 26px;
   padding: 0 15px;
-  max-width: 650px;
+  max-width: 756px;
   margin:10px auto 15px;
 }
-
+.file-links{
+  padding: 0 8px;
+  margin:57px auto 94px;
+  margin-top:40px; display:flex; justify-content:space-around;
+}
 .profile-links{
   padding: 0 15px;
   margin:10px auto 15px;
 }
-.profile-links .a{
-  cursor: pointer;
-  padding: 0 6px;
-  font-size: 20px;
-  color: #8d8d8d;
+header .profile-title{max-width: 784px;}
+header .file-links, header .profile-links{max-width: 696px;}
+header .profile-links{margin-top:40px; display:flex; justify-content:space-around;}
+
+.file-links a{
+  background-color: #e8e1d8;
+  border: 2px solid #cec7bd;
+  color:#908a79;
+  font-size: 16px;
+  font-weight: 500;
   text-transform: uppercase;
-  white-space: nowrap;
+  padding: 13px 27px;
+  margin:0 7px;
+}
+.file-links a:hover{
+  background-color: #cec7bd;
+  color:#908a79;
+  text-decoration: none;
 }
 @media (min-width: 420px) {
   .profile-links .a{
