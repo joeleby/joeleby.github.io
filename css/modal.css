@@ -8,7 +8,7 @@ main>section:nth-of-type(5), body>article:nth-of-type(5) .mdl-header{ background
 main>section:nth-of-type(6), body>article:nth-of-type(6) .mdl-header{ background-color:#38d665; }
 
 .Exp{
-  height: 500px;
+  height: 400px;
   overflow: hidden;
   padding: 0 20px;
 }
@@ -82,7 +82,10 @@ main>section:nth-of-type(6), body>article:nth-of-type(6) .mdl-header{ background
   position: relative;
   color:white;
   padding-top: 1px;
-  min-height: 500px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .close{
   position: absolute;
@@ -122,6 +125,10 @@ main>section:nth-of-type(6), body>article:nth-of-type(6) .mdl-header{ background
   padding: 0 15px;
 }
 
+.mdl-header .downarrow{
+  margin-top:25px;
+  margin-bottom:30px;
+}
 @media (min-width: 630px) {
   .mdl-h2{
     font-size: 40px;
@@ -130,7 +137,12 @@ main>section:nth-of-type(6), body>article:nth-of-type(6) .mdl-header{ background
 
 .mdl-body{
   text-align: center;
-  padding: 15px;
+}
+@media (min-width: 700px) {
+  .mdl-body{padding: 15px;}
+}
+@media (max-width: 700px) {
+  .mdl-body >p{margin-right: 15px;margin-left: 15px;}
 }
 .mdl-h3 {
     font-family: 'Cormorant Garamond', serif;
@@ -144,13 +156,13 @@ main>section:nth-of-type(6), body>article:nth-of-type(6) .mdl-header{ background
 
 .mdl-body>svg, .mdl-body>img{
   display: block;
-  width:1400px;
-  max-width: 100%;
+  width:100%;
+  max-width: 900px;
   margin-right: auto;
   margin-left: auto;
 }
 
-img.portrait{ width: 600px;}
+/*img.portrait{ width: 600px;}*/
 
 .mdl-body > p{
   margin-top:55px;
