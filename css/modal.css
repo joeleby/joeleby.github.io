@@ -12,10 +12,11 @@ main>section:nth-of-type(9), body>article:nth-of-type(9) .mdl-header{ background
 main>section:nth-of-type(10), body>article:nth-of-type(10) .mdl-header{ background-color:#c9500e; } 
 
 .Exp{
-  height: 400px;
+  height: 300px;
   overflow: hidden;
   padding: 0 20px;
 }
+
 .Exp-header{text-align: center;}
 
 .Exp-h2{
@@ -86,11 +87,19 @@ main>section:nth-of-type(10), body>article:nth-of-type(10) .mdl-header{ backgrou
   position: relative;
   color:white;
   padding-top: 1px;
-  min-height: 400px;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
+
+
+@media (min-width: 440px) {
+  .Exp{height: 400px;}
+  .mdl-header{min-height: 400px;}
+}
+
+
 .close{
   position: absolute;
   z-index: 1;
