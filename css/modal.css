@@ -6,6 +6,10 @@ main>section:nth-of-type(3), body>article:nth-of-type(3) .mdl-header{ background
 main>section:nth-of-type(4), body>article:nth-of-type(4) .mdl-header{ background-color:#05e0fc; } 
 main>section:nth-of-type(5), body>article:nth-of-type(5) .mdl-header{ background-color:#f67533; } 
 main>section:nth-of-type(6), body>article:nth-of-type(6) .mdl-header{ background-color:#01a4f3; } 
+main>section:nth-of-type(7), body>article:nth-of-type(7) .mdl-header{ background-color:#1b3364; } 
+main>section:nth-of-type(8), body>article:nth-of-type(8) .mdl-header{ background-color:#2c2c2c; } 
+main>section:nth-of-type(9), body>article:nth-of-type(9) .mdl-header{ background-color:#00dc91; } 
+main>section:nth-of-type(10), body>article:nth-of-type(10) .mdl-header{ background-color:#c9500e; } 
 
 .Exp{
   height: 400px;
