@@ -98,8 +98,8 @@ header .profile-links{margin-top:40px; display:flex; justify-content:space-aroun
   flex: 0 0 100%;
 }
 @media (min-width: 320px) {.grid{-webkit-box-flex: 0; -ms-flex: 0 0 50%; flex: 0 0 50%;}}
-@media (min-width: 630px) {.grid{-webkit-box-flex: 0; -ms-flex: 0 0 33.3333333333%; flex: 0 0 33.3333333333%;}}
-@media (min-width: 960px) {.grid{-webkit-box-flex: 0; -ms-flex: 0 0 25%; flex: 0 0 25%;}}
+/*@media (min-width: 630px) {.grid{-webkit-box-flex: 0; -ms-flex: 0 0 33.3333333333%; flex: 0 0 33.3333333333%;}}*/
+@media (min-width: 640px) {.grid{-webkit-box-flex: 0; -ms-flex: 0 0 25%; flex: 0 0 25%;}}
 
 .grid .img1x1{
   width: 100%;
@@ -168,16 +168,14 @@ header .profile-links{margin-top:40px; display:flex; justify-content:space-aroun
 .grid figure svg {
   width: 90%;
   height: 100%;
-  -webkit-transition: height 0.35s;
+  /*-webkit-transition: height 0.35s;
   -moz-transition: height 0.35s;
   -o-transition: height 0.35s;
-  transition: height 0.35s;
+  transition: height 0.35s;*/
 }
-.grid figure:hover svg{
-  height: 60%;
-}
+/*.grid figure:hover svg{height: 60%;}*/
 
-.grid figure p {
+/*.grid figure p {
   margin: 0;
   font-size: 68.5%;
   line-height: 1.2;
@@ -188,7 +186,6 @@ header .profile-links{margin-top:40px; display:flex; justify-content:space-aroun
   -moz-transition: opacity 0.35s;
   -o-transition: opacity 0.35s;
   transition: opacity 0.35s;
-}
-.grid figure:hover p {
-  opacity: 1;
-}
+}*/
+
+/*.grid figure:hover p {opacity: 1;}*/
