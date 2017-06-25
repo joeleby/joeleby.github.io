@@ -112,6 +112,14 @@ main>section:nth-of-type(10), body>article:nth-of-type(10) .mdl-header{ backgrou
   -o-transform-origin: 40px 40px;
   transform-origin: 40px 40px;
 }
+@media (max-width: 440px) {
+  .close{
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height:40px;
+  }
+}
 .close:hover{
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
