@@ -41,22 +41,22 @@ main>section:nth-of-type(10), body>article:nth-of-type(10) .mdl-header{ backgrou
   margin-left: auto;
   -webkit-transition: transform 0.3s;
   -o-transition: transform 0.3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
   -webkit-transform:translateY(40px);
   -ms-transform:translateY(40px);
-  -o-transform:translateY(40px);
   transform:translateY(40px);
 }
 .Exp:hover .Exp-hero{
   -webkit-transform:translateY(0);
   -ms-transform:translateY(0);
-  -o-transform:translateY(0);
   transform:translateY(0);
 }
 .Exp.on .Exp-hero{
   -webkit-transform:translateY(200px);
   -ms-transform:translateY(200px);
-  -o-transform:translateY(200px);
   transform:translateY(200px);
 }
 
@@ -88,9 +88,15 @@ main>section:nth-of-type(10), body>article:nth-of-type(10) .mdl-header{ backgrou
   color:white;
   padding-top: 1px;
   min-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 
@@ -110,15 +116,15 @@ main>section:nth-of-type(10), body>article:nth-of-type(10) .mdl-header{ backgrou
   height: 80px;
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
   transform: rotate(0deg);
   -webkit-transition: transform 0.25s ease-in-out;
   -o-transition: transform 0.25s ease-in-out;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
   -webkit-transform-origin: 40px 40px;
-  -moz-transform-origin: 40px 40px;
   -ms-transform-origin: 40px 40px;
-  -o-transform-origin: 40px 40px;
   transform-origin: 40px 40px;
 }
 @media (max-width: 440px) {
@@ -132,7 +138,6 @@ main>section:nth-of-type(10), body>article:nth-of-type(10) .mdl-header{ backgrou
 .close:hover{
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
