@@ -12,7 +12,7 @@ main>section:nth-of-type(9), body>article:nth-of-type(9) .mdl-header{ background
 main>section:nth-of-type(10), body>article:nth-of-type(10) .mdl-header{ background-color:#c9500e; } 
 
 .Exp{
-  height: 300px;
+  height: 245px;
   overflow: hidden;
   padding: 0 20px;
 }
@@ -40,20 +40,15 @@ main>section:nth-of-type(10), body>article:nth-of-type(10) .mdl-header{ backgrou
   margin-right: auto;
   margin-left: auto;
   -webkit-transition: transform 0.3s;
-  -o-transition: transform 0.3s;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
-  -webkit-transform:translateY(40px);
-  -ms-transform:translateY(40px);
-  transform:translateY(40px);
-}
-.Exp:hover .Exp-hero{
   -webkit-transform:translateY(0);
   -ms-transform:translateY(0);
   transform:translateY(0);
 }
+
 .Exp.on .Exp-hero{
   -webkit-transform:translateY(200px);
   -ms-transform:translateY(200px);
@@ -87,22 +82,27 @@ main>section:nth-of-type(10), body>article:nth-of-type(10) .mdl-header{ backgrou
   position: relative;
   color:white;
   padding-top: 1px;
-  min-height: 300px;
+  min-height: 245px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 
-@media (min-width: 440px) {
+@media (min-width: 600px) {
   .Exp{height: 400px;}
   .mdl-header{min-height: 400px;}
+  .Exp-hero{
+    -webkit-transform:translateY(40px);
+    -ms-transform:translateY(40px);
+    transform:translateY(40px);
+  }
 }
 
 

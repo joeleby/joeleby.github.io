@@ -72,6 +72,7 @@ header .profile-title {
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
+  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
@@ -128,6 +129,7 @@ header .profile-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-pack: center;
