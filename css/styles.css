@@ -59,6 +59,7 @@ header .profile-links{margin-top:40px;}
 }
 .profile-links .a{
   color: #100d2b;
+  min-width: 120px;
 }
 .profile-links .a span{
   color: #827f82;
