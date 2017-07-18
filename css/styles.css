@@ -57,6 +57,20 @@ header .profile-links{margin-top:40px;}
     padding: 0 15px;
   }
 }
+.profile-links .a{
+  color: #100d2b;
+}
+.profile-links .a span{
+  color: #827f82;
+  display: block;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 900;
+}
+.profile-links .a:hover{
+  color: #827f82;
+  text-decoration: none;
+}
 .profile-links .a:first-child{
   padding-left: 0;
 }
