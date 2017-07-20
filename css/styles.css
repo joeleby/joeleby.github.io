@@ -154,7 +154,6 @@ header .profile-links {
   }
 }
 
-
 /*@media (min-width: 630px) {.grid{-webkit-box-flex: 0; flex: 0 0 33.3333333333%;}}*/
 
 @media (min-width: 640px) {
@@ -168,7 +167,6 @@ header .profile-links {
   width: 100%;
   height: auto;
 }
-
 
 /* Common hover effect style */
 
